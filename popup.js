@@ -13,7 +13,7 @@ $(document).ready(function () {
 
       $.ajax({
         method: "POST",
-        url: "http://localhost:3000/jobs/",
+        url: "https://jobstracker.herokuapp.com/jobs/",
         data: data,
 
         success: function() {
