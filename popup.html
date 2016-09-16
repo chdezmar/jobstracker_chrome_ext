@@ -5,30 +5,45 @@
     <title>Jobs Tracker</title>
     <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="popup.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
 
-    <form class="form-group" id="visible">
+    <form>
       <label for="url" class="label label-default">Current URL</label><br>
-      <input type="text" name="url" id="url" class="wide-input"><br>
-      <div class="border"></div>
+      <input type="text" name="url" id="url"/><br>
 
       <label for="company" class="label label-default">Company</label><br>
-      <input type="text" name="company" id="company" class="wide-input" placeholder="Company">
-      <div class="border"></div>
+      <input type="text" name="company" id="company" placeholder="Company"/><br>
 
       <label for="postion" class="label label-default">Job title (required)</label><br>
-      <input type="text" name="position" id="position" class="wide-input" placeholder="Job position" required>
-      <div class="border"></div><br>
+      <input type="text" name="position" id="position" placeholder="ex. Junior Rails developer" required/><br>
 
-         <div class="row">
-           <div class='col-xs-7'>
-             <input type="submit" value="Add Job!" id="add-job" class="special-button">
-           </div>
+      <label for="location" class="label label-default">Location</label><br>
+      <input type="text" name="location" id="location" placeholder="ex. Salamanca"/><br>
 
-         </div>
-       </form>
+      <label for="status">Status of your application</label><br>
+        <select name="status" id="status">
+          <option>Interested</option>
+          <option>Applied</option>
+        </select><br>
+
+      <label for="rating">Your own rating for this job</label><br>
+        <select name="rating" id="rating">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select><br>
+
+
+      <label for="info" class="label label-default">More info</label><br>
+      <textarea type="text" name="info" id="info" placeholder="Details about the job" rows="4"></textarea><br>
+
+      <input type="submit" value="Add Job!" id="add-job">
+
+    </form>
 
   </body>
 </html>
